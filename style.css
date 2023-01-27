@@ -4,7 +4,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-
 .sub-header{
     display: flex;
     flex-direction: column;
@@ -46,9 +45,11 @@ body{
 
 .dashboard-container{
     display: inline-block;
+    justify-content: center;
     border: 10px;
-    margin: 0px auto;
+    margin-left: 80px;
 }
+
 
 @media (max-width: 960px) {
     .brand-logos{
@@ -61,5 +62,3 @@ body{
 
     }
 }
-
-
