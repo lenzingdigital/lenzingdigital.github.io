@@ -50,6 +50,11 @@ body{
     margin-left: 80px;
 }
 
+.dashboardversions-t{
+    display: flex;
+    justify-content: center;
+}
+
 
 @media (max-width: 960px) {
     .brand-logos{
