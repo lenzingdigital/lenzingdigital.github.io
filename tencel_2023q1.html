@@ -12,7 +12,13 @@
       <link rel="stylesheet" href="style.css">
 
       <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-
+      <script>
+      $(function(){
+        $("#header").load("header.html");
+        $("#dashboardversions-2022").load("dashboard_versions_tencel.html");
+        $("#dashboardversions-2023").load("dashboard_versions_tencel_2023.html");
+      });
+      </script>
     </head>
 
     <center>
@@ -20,26 +26,11 @@
       <div id="header"></div>
       <br>
       <br>
-      <div id="dashboardversions-t"></div>
-      <br>
       <div style="display: inline">
-      <div class="dropdown-container" style="display: inline-block">
-        <button data-bs-toggle="dropdown" class="nav-link dropdown-toggle" type="button" aria-expanded="false" style= "margin-right: 30px; font-size: 120%; background-color: #ABEBC6; color: black;">2022 <span class="caret"></span>
-        </button>
-        <ul role="menu" class="dropdown-menu">
-        <li><a class="dropdown-item" href="tencel_2022q2.html">2022 Q2 Dashboard</a></li>
-        <li><a class="dropdown-item" href="tencel_2022q3.html">2022 Q3 Dashboard</a></li>
-        <li><a class="dropdown-item" href="tencel_2022q4.html">2022 Q4 Dashboard</a></li>
-        </ul>
+      <div style="display: inline-block" id="dashboardversions-2022"></div>
+      <div style="display: inline-block" id="dashboardversions-2023"></div>
       </div>
-      <div class="dropdown-container" style="display: inline-block">
-        <button data-bs-toggle="dropdown" class="nav-link dropdown-toggle" type="button" aria-expanded="false" style= "margin-right: 30px; font-size: 120%; background-color: #ABEBC6; color: black;">2023 <span class="caret"></span>
-        </button>
-        <ul role="menu" class="dropdown-menu">
-            <li><a class="dropdown-item" href="tencel_2023q1.html">2023 Q1 Dashboard</a></li>
-        </ul>
-      </div>
-      </div>
+      <br>
       <p style="text-align: center;"> Click on the 'Full Screen' button at bottom-right corner for better visual experience. </p>
       <br>
       <div class="dashboard-container">
