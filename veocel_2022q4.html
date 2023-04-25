@@ -13,11 +13,12 @@
 
       <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
       <script>  
-      $(function(){ 
+      $(function(){
         $("#header").load("header.html");
-        $("#dashboardversions-v").load("dashboard_versions_veocel.html");
-      }); 
-      </script>  
+        $("#dashboardversions-2022").load("dashboard_versions_veocel.html");
+        $("#dashboardversions-2023").load("dashboard_versions_veocel_2023.html");
+      });
+      </script>
     </head>
 
     <center>
@@ -25,7 +26,10 @@
       <div id="header"></div>
       <br>
       <br>
-      <div id="dashboardversions-v"></div>
+      <div style="display: inline">
+      <div style="display: inline-block" id="dashboardversions-2022"></div>
+      <div style="display: inline-block" id="dashboardversions-2023"></div>
+      </div>
       <br>
       <p> Click on the 'Full Screen' button at bottom-right corner for better visual experience. </p>
       <br>
