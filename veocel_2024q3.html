@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <title>Lenzing Digital Performance Dashboards</title>
+
+      <link rel="stylesheet" href="style.css">
+
+      <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+      <script>  
+      $(function(){
+        $("#header").load("header.html");
+        $("#dashboardversions-2022").load("dashboard_versions_veocel.html");
+        $("#dashboardversions-2023").load("dashboard_versions_veocel_2023.html");
+        $("#dashboardversions-2024").load("dashboard_versions_veocel_2024.html");
+      });
+      </script>  
+    </head>
+
+    <center>
+    <body>
+      <div id="header"></div>
+      <br>
+      <br>
+      <div style="display: inline">
+      <div style="display: inline-block" id="dashboardversions-2022"></div>
+      <div style="display: inline-block" id="dashboardversions-2023"></div>
+      <div style="display: inline-block" id="dashboardversions-2024"></div>
+      </div>
+      <br>
+      <br>
+      <p> Click on the 'Full Screen' button at bottom-right corner for better visual experience. </p>
+      <br>
+      <div class="dashboard-container">
+        <script type='module' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://prod-apnortheast-a.online.tableau.com/t/bcwglobal/views/2024Q3VEOCELQuarterlyDashboardFinalV2/Cover' width='1300' height='772' hide-tabs toolbar='bottom' ></tableau-viz>
+      <br>
+      <br>
+      <br>
+      <p style="color:#414042; font-size:70%;"> ​Copyright @2022 by BCW Global </p>
+    
+    </body>
+
+    </center>
+</html>
